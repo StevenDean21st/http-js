@@ -1,11 +1,6 @@
 /** 实用函数。 */
 import {HTTPClient, HTTPRequest, HTTPResponse, ProgressEventHandler} from "./core.js";
 
-let Blob = null;
-
-if (typeof window !== "object") Blob = (await import("buffer")).Blob
-else Blob = window.Blob;
-
 export const HTTPUtils = {
     /** 将二进制文件放置到 FormData 对象中，以 'multipart/form-data' 格式上传。 */
     async postFileAsFormData(driver: HTTPClient, url: string,
