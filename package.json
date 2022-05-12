@@ -1,12 +1,22 @@
 {
   "name": "@sd21st/http-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web HTTP utils.",
   "author": "StevenDean21st",
   "license": "MIT",
   "main": "index.js",
   "type": "module",
   "types": "index.d.ts",
+  "keywords": [
+    "http",
+    "http-utils",
+    "web",
+    "browser",
+    "nodejs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/StevenDean21st/http-js.git"
